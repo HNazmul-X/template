@@ -1,8 +1,15 @@
 {
-  "name": "reactjs-single-link",
-  "private": true,
+  "name": "react-sass",
+  "private": false,
   "version": "0.0.0",
+  "author": {
+    "email": "nazmul.w3@gmail.com",
+    "name": "H. Nazmul Hassan",
+    "url": "https://www.hnazmul.me"
+  },
+  "keywords": ["set up template","Ready made Template","react + sass"],
   "scripts": {
+    "sass":"sass ./src/styles/style.scss ./src/styles/style.css -w",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"

@@ -1,0 +1,23 @@
+@use "./base" as *;
+@use "./util/" as *;
+
+body {
+    @include grid(5, 10) {
+        @include sm {
+            @include grid(3);
+            @include size(null, 20);
+        }
+        @include min-md{
+            @include size(340px,100px)
+        }
+    }
+    @include mx(null, 10px);
+    @include color(red);
+    @include my(10px,20px);
+    @include p(10px 20px){
+        @include sm{
+            @include p(10px 40px);
+            @include m(10px 30px 30px)
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@mixin d-block {
+    display: block;
+}
+@mixin d-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+@mixin d-iblock {
+    display: inline-block;
+}
+
+@mixin d-inline {
+    display: inline;
+}
+@mixin d-iflex {
+    display: inline-flex;
+}
