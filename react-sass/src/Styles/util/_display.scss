@@ -16,5 +16,9 @@
     display: inline;
 }
 @mixin d-iflex {
-    display: inline-flex;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display:inline-flex;
 }

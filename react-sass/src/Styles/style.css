@@ -1,13 +1,14 @@
-@font-face {
-  font-family: "Proxima Nova";
-  font-weight: 500;
-  src: url("../../Assets/Font/proxima_nova_regular.woff");
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* 
 ==================================
 ====CUSTOM BREAKPOINT============ */
 * {
-  font-family: "Milliard ExtraBold";
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  min-height: calc(100vh - 60px);
+  background: #E8F4EA;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -17,6 +18,12 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -46,7 +53,6 @@ main {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -349,34 +355,67 @@ template {
   display: none;
 }
 
-body {
-  display: grid;
-  grid-template-rows: repeat(10, 1fr);
-  grid-template-columns: repeat(5, 1fr);
-  margin-right: 10px;
-  color: red;
-  margin-top: 10px;
-  margin-bottom: 20px;
+.hnazmul-navbar {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  box-shadow: 0px 2px 2px 2px #3b3b3b13, 0px 7px 10px -10px rgba(0, 0, 0, 0.336);
+}
+.hnazmul-navbar .hnazmul-navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-nav-brand {
+  padding-right: 20px;
+}
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-nav-toggle-btn {
+  display: none;
+}
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-nav-toggle-btn button {
+  border: none;
+}
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-nav-toggle-btn img.toggler-btn {
+  width: 20px;
+}
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content {
+  flex-basis: auto;
+  display: flex;
+  margin-left: auto;
+}
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper {
+  display: flex;
+  flex-basis: auto;
+}
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper ul.navbar-list {
+  display: flex;
+  margin-bottom: 0px !important;
+  width: 100%;
+  margin-top: 0px;
+}
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper ul.navbar-list li.navbar-list-item {
+  list-style: none;
+}
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper ul.navbar-list li.navbar-list-item .navbar-list-link {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
   padding: 10px 20px;
 }
-@media screen and (max-width: 576px) {
-  body {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 20;
-  }
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper button.navbar-closer-icon {
+  border: none;
+  background: none;
+  display: none;
+  transition: 0.5s;
 }
-@media screen and (min-width: 768px) {
-  body {
-    width: 340px;
-    height: 100px;
-  }
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper button.navbar-closer-icon.rotate {
+  transform: rotate(180deg);
 }
-@media screen and (max-width: 576px) {
-  body {
-    padding: 10px 40px;
-    margin: 10px 30px 30px;
-  }
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper button.navbar-closer-icon img.navbar-closer {
+  width: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
