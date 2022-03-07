@@ -1,0 +1,14 @@
+@mixin mx($value, $value2: null) {
+    margin-left: $value;
+    margin-right: $value2;
+    @content;
+}
+@mixin my($value: null, $value2: null) {
+    margin-top: $value;
+    margin-bottom: $value2;
+    @content;
+}
+@mixin m($value) {
+    margin: $value;
+    @content;
+}

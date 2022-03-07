@@ -1,0 +1,14 @@
+@mixin px($value, $value2: null) {
+    padding-left: $value;
+    padding-right: $value2;
+    @content;
+}
+@mixin py($value: null, $value2: null) {
+    padding-top: $value;
+    padding-bottom: $value2;
+    @content;
+}
+@mixin p($value) {
+    padding: $value;
+    @content;
+}

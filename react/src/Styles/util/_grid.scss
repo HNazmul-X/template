@@ -1,0 +1,17 @@
+@mixin grid($col: null, $row: null, $justify: null, $align: null) {
+    display: grid;
+    @if $row {
+        grid-template-rows: repeat($row, 1fr);
+    }
+    @if $col {
+        grid-template-columns: repeat($col, 1fr);
+    }
+    @if $justify {
+        justify-content: $justify;
+    }
+    @if $align {
+        align-items: center;
+    }
+    @content;
+}
+
